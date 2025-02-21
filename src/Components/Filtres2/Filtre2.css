@@ -1,0 +1,97 @@
+/* Filtres2.css */
+
+.container {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .form-container {
+    flex: 0 0 25%; /* Takes 25% of the width on large screens */
+    min-width: 250px; /* Minimum width for the form */
+    max-width: 300px; /* Maximum width for the form */
+    margin-left: 5px;
+  }
+  
+  .lieux-list-container {
+    flex: 1 1 75%; /* Takes the remaining width */
+  }
+  
+  .lieux-list {
+    margin-left: 25%;
+    margin-right: 6px;
+    position: absolute;
+    top: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .lieux-list li {
+    flex: 1 1 calc(33.333% - 10px); /* Three items per row with space between */
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 1024px) {
+    .lieux-list li {
+      flex: 1 1 calc(50% - 10px); /* Two items per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack form and list vertically on small screens */
+    }
+  
+    .form-container {
+      flex: 0 0 25%; /* Takes 25% of the width on large screens */
+      min-width: 250px; /* Minimum width for the form */
+      max-width: 300px; /* Maximum width for the form */
+      margin-left: 5px;
+      z-index: 999;
+    }
+  
+    .form-button {
+      display: block !important; /* Show button to toggle form */
+    }
+  
+    .lieux-list li {
+      flex: 1 1 100%; /* One item per row on small screens */
+      margin-top: 50%;
+
+    }
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  form input, form select, form button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  form button {
+    cursor: pointer;
+    background-color: #04AA6D;
+    color: black;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .form-button {
+    display: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  

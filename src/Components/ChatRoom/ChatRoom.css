@@ -1,0 +1,136 @@
+.chat-room {
+  width: 400px;
+  margin: 0 auto;
+  margin-left: 30%;
+  position: absolute;
+  margin-bottom: 0%;
+  top: 100px;
+}
+
+.message-container {
+  margin-left: 10%;
+  height: 100vh;
+  max-height: 500px;
+  overflow-y: auto;
+  width: 200%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.message {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.message p {
+  margin: 5px 0;
+}
+
+.message p:first-child {
+  font-weight: bold;
+}
+
+.input-container {
+  margin-top: 20px;
+}
+
+.input-container input {
+  width: calc(100% - 70px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-message {
+  width: 180%;
+  /* height: 150px; */
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  resize: vertical;
+  margin-left: 10%;
+  resize: none;
+}
+
+.send {
+  position: fixed;
+  bottom: 0.5%;
+  right: 4.5%;
+  width: 80px;
+  height: 63px;
+  z-index: 999;
+  background-color: black;
+  border-radius: 5%;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.input-container button {
+  width: 70px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.input-container button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 600px) {
+  .chat-room {
+    position: fixed;
+    /* Fixe la position de l'élément par rapport à la fenêtre */
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* Prend toute la hauteur de l'écran */
+    margin: 0;
+    /* Retire les marges */
+    padding: 0;
+    box-sizing: border-box;
+    /* Assure que le padding et la bordure sont inclus dans la largeur et la hauteur */
+    overflow: hidden;
+    /* Empêche tout débordement */
+  }
+
+  .message-container {
+    width: 100%;
+    margin: 0;
+    height: 80vh;
+    /* Ajuste la hauteur pour laisser de l'espace pour les autres éléments */
+    padding: 10px;
+    max-height: none;
+
+    box-sizing: border-box;
+  }
+
+  .input-message {
+    width: calc(100% - 20px - 73px);
+    /* Ajuste la largeur pour s'adapter au padding */
+    margin-left: 10px;
+    /* Centrage horizontal avec un petit espace */
+    margin-right: 10px;
+    bottom: 2px;
+    right: 73px;
+    position: fixed;
+  }
+
+  .send {
+    bottom: 2px;
+    /* Ajuste l'emplacement du bouton sur les petits écrans */
+    right: 10px;
+  }
+
+}

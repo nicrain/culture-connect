@@ -1,0 +1,10 @@
+.lieux-list li a {
+  color: black;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.lieux-list {
+  background-color: black;
+  margin-bottom: 10px;
+}

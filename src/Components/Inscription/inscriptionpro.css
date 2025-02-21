@@ -1,0 +1,180 @@
+/* Base styling */
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  /* max-width: 1200px; */
+  margin: 0 0;
+
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.card-3d-wrapper {
+  transform-style: preserve-3d;
+
+  width: 100%;
+  max-width: 70%;
+  margin: auto;
+}
+
+.para {
+  text-align: left;
+  max-width: 80%;
+  margin-left: 20px;
+}
+
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.center-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+h1,
+h2,
+h3 {
+  color: #2c3e50;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 1px;
+}
+
+.lapse {
+  max-width: 40%;
+  text-align: justify;
+  margin-left: 30%;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-control,
+.form-control-lg,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 50%;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-control-lg {
+  font-size: 1.25em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+
+  cursor: pointer;
+  text-decoration: none;
+
+  background-color: #67A288 !important;
+  color: #000 !important;
+
+  border-radius: 50px !important;
+  border: none !important;
+  cursor: pointer !important;
+
+  font-size: 16px !important;
+
+  justify-content: center;
+  text-align: center;
+
+
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+.link {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+.mt-4 {
+  margin-top: 40px;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+
+
+.pb-3 {
+  padding-bottom: 30px;
+}

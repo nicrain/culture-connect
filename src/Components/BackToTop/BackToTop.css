@@ -1,0 +1,26 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.scroll-to-top-button {
+  display: inline-block;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-to-top-button:hover {
+  filter: grayscale(100%) !important;
+  -webkit-filter: grayscale(80%) !important;
+  -moz-filter: grayscale(80%) !important;
+  -ms-filter: grayscale(80%) !important;
+  -o-filter: grayscale(80%) !important;
+}

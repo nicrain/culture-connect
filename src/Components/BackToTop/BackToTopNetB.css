@@ -1,0 +1,7 @@
+img{
+    filter: grayscale(80%) !important;
+    -webkit-filter: grayscale(100%) !important;
+    -moz-filter: grayscale(80%) !important;
+    -ms-filter: grayscale(80%) !important;
+    -o-filter: grayscale(80%) !important;
+}

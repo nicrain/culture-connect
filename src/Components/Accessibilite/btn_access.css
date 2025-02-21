@@ -1,0 +1,111 @@
+.accessibility-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    /* Adjust as needed */
+    width: 80%;
+    /* Adjust as needed */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: relative;
+    width: 60px;
+    height: 34px;
+    background-color: #ccc;
+    border-radius: 34px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.4s;
+}
+
+input:checked+.slider {
+    background-color: #04AA6D;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.btn-access {
+    background-color: #fff;
+    border: 2px solid #04AA6D;
+    border-radius: 10px;
+    height: 45px;
+    width: 100%;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.btn-access:hover {
+    background-color: #04AA6D;
+    color: #fff;
+    text-transform: bold;
+}
+
+/* Add additional styling to match the image */
+.modal h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.switch p {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #333;
+    flex: 1;
+}

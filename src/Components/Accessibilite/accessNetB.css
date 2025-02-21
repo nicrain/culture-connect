@@ -1,0 +1,33 @@
+.slider {
+
+    background-color: #fffbfb;
+    border: 1.2px solid black;
+
+}
+
+.slider:before {
+
+    background-color: black;
+}
+
+
+input:checked+.slider {
+    background-color: white;
+}
+
+.control-panel {
+
+    background-color: black;
+}
+
+.btn-access {
+    background-color: #fff;
+    border: 2px solid black;
+
+}
+
+.btn-access:hover {
+    background-color: black;
+    color: #fff;
+    text-transform: bold;
+}

@@ -1,0 +1,30 @@
+img {
+    filter: grayscale(80%) !important;
+    -webkit-filter: grayscale(80%) !important;
+    -moz-filter: grayscale(80%) !important;
+    -ms-filter: grayscale(80%) !important;
+    -o-filter: grayscale(80%) !important;
+}
+
+h1,
+h2,
+h3 {
+    color: black !important;
+}
+
+.heading-header-title::before {
+    background-color: white;
+}
+
+.heading-header-title::after {
+
+    background-color: white;
+}
+
+.heading-header-second-title {
+    color: black;
+}
+
+.heading-header-second-title span {
+    color: var(--white-100);
+}
